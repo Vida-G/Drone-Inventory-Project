@@ -16,5 +16,4 @@ class Config:
     SECRET_KEY = "You will never guess..." 
     SQLALCHEMY_DATABASE_URI= os.environ.get('DEPLOY_DATABASE_URI')
 
-    #SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://postgres:password@localhost:5432/drone_inventory'
     SQLALCHEMY_TRACK_MODIFICATIONS = False # Decreases unnecessary output in terminal as we use the db
